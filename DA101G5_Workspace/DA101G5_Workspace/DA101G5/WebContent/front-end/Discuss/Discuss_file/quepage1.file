@@ -1,0 +1,39 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+    int totalPage =0;//總頁數
+    int whichPage = 0;//第?頁
+    int totalque = 0;//資料總筆數
+    int quePerPage = 10;//每頁?筆
+    int indexArray[] = null;//每頁的資料陣列開頭索引
+    int index = 0;//當頁的資料陣列開頭索引
+%>
+
+<%
+    totalque = quelist.size();//At queListAll.jsp
+    if(totalque%quePerPage!=0){
+        totalPage = (totalque/quePerPage)+1;
+    }else{totalPage = totalque/quePerPage;};
+    
+    indexArray = new int[totalPage];
+    for(int i=1; i<=indexArray.length; i++){
+      indexArray[i-1] = (i-1)*quePerPage;//[0,3,6,9....]  
+    }
+%>
+
+<%
+try {
+       whichPage = Integer.parseInt(request.getParameter("whichPage"));
+       index = indexArray[whichPage-1];
+    } catch (NumberFormatException e) { //第一次執行的時候
+       whichPage=1;
+       index=0;
+    } catch (ArrayIndexOutOfBoundsException e) { //總頁數之外的錯誤頁數  傳送超過總頁數的頁數
+         if (totalPage>0){
+              whichPage=totalPage;
+              index=indexArray[totalPage-1];
+         }
+    } 
+%>
+
+
+

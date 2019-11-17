@@ -1,0 +1,77 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="icon" href="<%=request.getContextPath()%>/front-end/home/images/雞2.png" type="image/png"  width="10px"/>
+<link rel="stylesheet" href="<%= request.getContextPath() %>/front-end/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/front-end/home/css/flaticon.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/front-end/home/css/themify-icons.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/front-end/home/vendors/owl-carousel/owl.carousel.min.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/front-end/home/vendors/nice-select/css/nice-select.css" />
+<!-- main css -->
+<link rel="stylesheet" href="<%=request.getContextPath()%>/front-end/home/css/style.css" />
+<!-- icon CDN-->
+<script src="https://kit.fontawesome.com/b5dcd23d12.js"></script>
+<!-- -------------日曆套件-------------------- -->
+
+    <link href='<%=request.getContextPath()%>/front-end/home/packages/core/main.css' rel='stylesheet' />
+	<link href='<%=request.getContextPath()%>/front-end/home/packages/daygrid/main.css' rel='stylesheet' />
+	<link href='<%=request.getContextPath()%>/front-end/home/packages/timegrid/main.css' rel='stylesheet' />
+	<link href='<%=request.getContextPath()%>/front-end/home/packages/list/main.css' rel='stylesheet' />
+	<script src='<%=request.getContextPath()%>/front-end/home/packages/core/main.js'></script>
+	<script src='<%=request.getContextPath()%>/front-end/home/packages/core/locales-all.js'></script>
+	<script src='<%=request.getContextPath()%>/front-end/home/packages/interaction/main.js'></script>
+	<script src='<%=request.getContextPath()%>/front-end/home/packages/daygrid/main.js'></script>
+	<script src='<%=request.getContextPath()%>/front-end/home/packages/timegrid/main.js'></script>
+	<script src='<%=request.getContextPath()%>/front-end/home/packages/list/main.js'></script>
+  <script src='<%=request.getContextPath()%>/front-end/home/js/theme-chooser.js'></script>
+
+   <script src="<%=request.getContextPath()%>/front-end/home/js/popper.js"></script>
+
+<script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
+<!-- --------------------日曆CSS-------------------- -->
+<!-- --------------------star-------------------- -->
+<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+<!--<script src="<%=request.getContextPath()%>/front-end/home/js/star-rating.js"></script>-->
+<!--<link href='<%=request.getContextPath()%>/front-end/home/css/star-rating.css' rel='stylesheet' />-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- --------------------star-------------------- -->
+
+
+<!-- --------------------Alert-------------------- -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- --------------------Alert-------------------- -->
+
+<style>
+	
+
+   body { 
+     margin: 0; 
+     padding: 0; 
+     font-family: Arial, Helvetica Neue, Helvetica, sans-serif; 
+     font-size: 14px; 
+   } 
+
+   #top { 
+     background: #eee; 
+     border-bottom: 1px solid #ddd; 
+     padding: 0 10px; 
+     line-height: 40px; 
+     font-size: 12px; 
+   } 
+
+   #calendar { 
+     max-width: 900px; 
+     margin: 10px ; 
+     padding: 0 10px; 
+   } 
+   .fc-day-grid-event .fc-content {
+		color: #ffffff;
+		text-decoration: none;
+	} 
+
+/*    .contact_info{ */
+/*    	margin-top:20%;  */
+/*    }  */
+
+</style>

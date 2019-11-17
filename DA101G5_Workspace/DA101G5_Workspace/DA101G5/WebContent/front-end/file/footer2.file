@@ -1,0 +1,89 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+  <!-- ================================================= -->
+	<c:if test="${memberVO.member_id != null}" var="condition" scope="page" >
+		<jsp:include page="/front-end/chatRoom/chatroom.jsp" />
+	</c:if>
+	
+<script type="text/javascript">
+<%-- 錯誤表列 --%>
+<c:if test="${not empty errorMsgs}">				
+		<c:forEach var="message" items="${errorMsgs}">
+			swal('${message.value}')
+		</c:forEach>
+</c:if>	
+
+</script>
+	<!-- ================================================= -->
+<!--================ Start footer Area  =================-->
+    <footer class="footer-area section_gap" style="height:400px">
+      <div class="container">
+        <div class="row "  >
+          <div class="col-lg-4 col-md-6 single-footer-widget context-center">
+            <h4>指導老師</h4>
+            <ul>
+              <li><a href="#">吳永志</a></li>
+              <li><a href="#">吳冠宏</a></li>
+              <li><a href="#">郭惠民</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-1 col-md-6 single-footer-widget">
+            <h4>G5組員</h4>
+            <ul>
+              <li><a href="#">曾宏逸</a></li>
+              <li><a href="#">張軒榮</a></li>
+              <li><a href="#">卜莞薷</a></li>
+            </ul>
+            
+          </div>
+          <div class="col-lg-3 col-md-1 single-footer-widget">
+            <h4></h4>
+            <br>
+           <ul>
+              <li><a href="#">曾國哲</a></li>
+              <li><a href="#">余宗達</a></li>
+              <li><a href="#">劉盈均</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-1 single-footer-widget">
+            <h4>聯絡我們</h4>
+            <br>
+           <ul>
+              <li><a href="#">地址:桃園市中壢區中大路300號</a></li>
+              <li><a href="#">電話： 03 425 7387</a></li>
+            </ul>
+          </div>
+         
+            </div>
+          </div>
+        </div>
+      
+
+          </p>
+        
+        </div>
+      </div>
+    </footer>
+    <!--================ End footer Area  =================-->
+    <!--================ message  =================-->
+ 	<div id="mesgsalert" class="alert" role="alert" style="position: fixed;top:6%;right:2%; height: 80px;width:300px;z-index:9999;background-color:#F5F5F5;box-shadow:3px 7px;opacity:0;">
+ 		 <img id="mesagewho" style="width:50px;height:50px;float:left;">
+ 		 <p style="margin-right:30px;margin-top:10px;float:right;"></p>
+	</div>
+ 
+    
+    
+    
+<!-- --------------------bootstrap-------------------- -->
+ <script src="<%=request.getContextPath()%>/front-end/home/js/jquery-3.2.1.min.js"></script>
+ <script src="<%=request.getContextPath()%>/front-end/home/js/bootstrap.min.js"></script>
+ <script src="<%=request.getContextPath()%>/front-end/home/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+ <script src="<%=request.getContextPath()%>/front-end/home/vendors/owl-carousel/owl.carousel.min.js"></script>
+ <script src="<%=request.getContextPath()%>/front-end/home/js/owl-carousel-thumb.min.js"></script>
+ <script src="<%=request.getContextPath()%>/front-end/home/js/jquery.ajaxchimp.min.js"></script>
+ <script src="<%=request.getContextPath()%>/front-end/home/js/mail-script.js"></script>
+ <!--gmaps Js-->
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+ <script src="<%=request.getContextPath()%>/front-end/home/js/gmaps.min.js"></script>
+ <script src="<%=request.getContextPath()%>/front-end/home/js/theme.js"></script>
+<!-- --------------------bootstrap-------------------- -->
