@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+android:enterFadeDuration="300"
+android:exitFadeDuration="150">
+<!-- 按壓時 -->
+<item android:state_pressed="true">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <solid android:color="#FFFACF"/>
+        <corners android:radius="100dp"/>
+        <stroke android:width="0.5px" android:color="#3C3C3C" />
+    </shape>
+</item>
+
+<!-- 預設時 -->
+<item android:color="@android:color/black">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <solid android:color="#FFFFFF"/>
+        <corners android:radius="1000dp"/>
+        <stroke android:width="0.5px" android:color="#555555" />
+    </shape>
+</item>
+
+</selector>

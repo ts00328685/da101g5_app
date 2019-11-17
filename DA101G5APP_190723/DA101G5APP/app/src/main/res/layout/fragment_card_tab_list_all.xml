@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/card_list_all_tab_refresh"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".card.CardListActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_list_activity_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/card_list_all_tab_fab_voice"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="40dp"
+
+        android:backgroundTint="#2776F7"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#FFFFFF"
+        app:borderWidth="2dp"
+        android:foregroundTint="@color/cardview_light_background"
+        android:foreground="@drawable/ic_keyboard_voice_black_24dp"
+        android:foregroundGravity="center" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/card_list_all_tab_fab_az"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="40dp"
+
+        android:backgroundTint="#2776F7"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#FFFFFF"
+        app:borderWidth="2dp"
+        android:foregroundTint="@color/cardview_light_background"
+        android:foreground="@drawable/ic_sort_by_alpha_black_24dp"
+        android:foregroundGravity="center" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/card_list_all_tab_fab_choice"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="40dp"
+
+        android:backgroundTint="#2776F7"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#FFFFFF"
+        app:borderWidth="2dp"
+        android:foregroundTint="@color/cardview_light_background"
+        android:foreground="@drawable/ic_list_black_24dp"
+        android:foregroundGravity="center" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="36dp"
+        android:layout_marginBottom="10dp"
+
+        android:backgroundTint="#004ECF"
+        android:foreground="@drawable/ic_school_black_24dp"
+        android:foregroundTint="@color/cardview_light_background"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#FFFFFF"
+        app:borderWidth="2dp"
+
+        android:foregroundGravity="center"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="#003A94" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

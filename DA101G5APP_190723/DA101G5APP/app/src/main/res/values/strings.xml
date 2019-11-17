@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DA101G5APP</string>
+    <string name="title_activity_bn">BNActivity</string>
+    <string name="title_home">首頁</string>
+    <string name="title_course">課程</string>
+    <string name="title_card">單字</string>
+    <string name="title_friend">學伴</string>
+    <string name="title_commodity">商品</string>
+    <string name="navigation_drawer_open">drawer opened</string>
+    <string name="navigation_drawer_close">drawer closed</string>
+    <string name="title_activity_card_detail">CardDetail</string>
+    <string name="title_activity_card_list">CardListActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string-array name="hours">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="title_activity_point_trans">Point_transActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_card_multi_choice">選擇題測驗</string>
+    <string name="title_activity_card_voice_test">發音測驗</string>
+</resources>
