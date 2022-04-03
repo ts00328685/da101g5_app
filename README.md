@@ -8,5 +8,5 @@ tutoring platform made at III
 <img src="DA101G5APP_190723/4.jpg" alt="drawing" width="300"/>
 <img src="DA101G5APP_190723/2.jpg" alt="drawing" width="300"/>
 <img src="DA101G5APP_190723/1.jpg" alt="drawing" width="300"/>
-<img src="DA101G5APP_190723/9.jpg" alt="drawing" width="300"/>
-<img src="DA101G5APP_190723/10.jpg" alt="drawing" width="300"/>
+<img src="DA101G5APP_190723/9.png" alt="drawing" width="300"/>
+<img src="DA101G5APP_190723/10.png" alt="drawing" width="300"/>
